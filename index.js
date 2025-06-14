@@ -12,9 +12,9 @@ const __dirName = path.dirname(__fileName);
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
+app.use("/api", router);
 app.use(express.static(path.join(__dirName, "/client/build")));
-app.all('/{*any}', (req, res) => res.sendFile(path.join(__dirName, "/client/build/index.html")));
+app.get('/*any', (req, res) => res.sendFile(path.join(__dirName, "/client/build/index.html")));
 
 dotenv.config();
 connectDB();

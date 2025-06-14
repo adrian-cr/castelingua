@@ -17,16 +17,17 @@ import Footer from "../components/Footer";
   const resourcesAvailable = arr => {
     return arr.some(e => e.ok);
   };
+  const apiURL = process.env.REACT_APP_BASE_URL;
   const fetchWordData = async () => {
     try {
       const responseDLE = await fetch(
-        `${process.env.REACT_APP_BASE_URL}dle/${encodeURIComponent(word)}`
+        `${apiURL}dle/${encodeURIComponent(word)}`
       );
       const responseDPD = await fetch(
-        `${process.env.REACT_APP_BASE_URL}dpd/${encodeURIComponent(word)}`
+        `${apiURL}dpd/${encodeURIComponent(word)}`
       );
       const responseGTG = await fetch(
-        `${process.env.REACT_APP_BASE_URL}gtg/${encodeURIComponent(word)}`
+        `${apiURL}gtg/${encodeURIComponent(word)}`
       );
 
       if (resourcesAvailable([responseDLE, responseDPD, responseGTG])) {
