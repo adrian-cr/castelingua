@@ -1,0 +1,16 @@
+.not-found-container {
+  align-items: center;
+  color: #555555;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.not-found-header {
+  font-size: calc(3vw + 1vh);
+}
+
+.not-found-message {
+  font-size: calc(1vw + 10px);
+}

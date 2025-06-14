@@ -1,0 +1,29 @@
+.drawer {
+  background: linear-gradient(to bottom, #6179FF, #0ee0a8);
+}
+.header {
+  background: linear-gradient(to right, #6179FF, #0ee0a8);
+  height: 10vh;
+
+}
+#navBar {
+  height: 0vh;
+}
+
+.logo-container {
+  align-items:"center";
+  display:"flex";
+  margin: 0;
+  min-width: 250px;
+  max-width: 250px;
+}
+.imagotype {
+  width: 20%;
+}
+.isotype {
+  width: 60%;
+}
+.logotype {
+  margin-left: 2%;
+  width: 65%;
+}

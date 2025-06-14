@@ -1,0 +1,22 @@
+.footer{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.footer-wrapper {
+  margin: 50px;
+}
+.footer-logo {
+  width: 200px;
+}
+.footer-copyright {
+  color: #4f4f4f;
+  font-weight: 700;
+  margin: 0;
+}
+.gradient {
+  background: linear-gradient(45deg, #384cb9 0%, #4278cf 50%, #4cde9a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

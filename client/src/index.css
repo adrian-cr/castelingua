@@ -1,0 +1,32 @@
+:root {
+  --primary: #4b6af5;
+}
+
+body {
+  background-color: #e6e6e6 !important;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+abbr {
+  font-weight: 800;
+  color: var(--primary);
+}
+ol > li::marker {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+a {
+  color: var(--primary);
+  font-weight: 800;
+  text-decoration: none;
+}

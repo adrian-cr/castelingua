@@ -1,0 +1,32 @@
+#drawer-search-bar {
+  background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+}
+
+#dsb-search-field {
+  background-color: white;
+  font-size: calc(1vw + 1vh);
+  height:2vh;
+  padding-bottom: 20px;
+}
+
+#dsb-search-field:focus {
+  font-size: calc(2vw + 1.5vh);
+  transition: 300ms;
+}
+
+#dsb-search-button {
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-bottom: solid 1px rgb(141, 141, 141);
+  display: flex;
+  padding: 0 5px;
+}
+#dsb-search-button:hover {
+    background-color: rgb(215, 250, 244);
+    cursor: pointer;
+    transition: 300ms;
+  }

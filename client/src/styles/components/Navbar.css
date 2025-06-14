@@ -1,0 +1,45 @@
+#navbar {
+  height: 0vh;
+}
+#nb-drawer {
+  background: linear-gradient(to bottom, #6179FF, #0ee0a8);
+}
+#nb-header {
+  align-items: center;
+  background: linear-gradient(to right, #6179FF, #0ee0a8);
+  height: 10vh;
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100vw;
+}
+
+/* */
+
+
+/* Logo */
+#nb-logo-container {
+  min-width: 200px;
+  max-width: 200px;
+}
+#nb-imagotype {
+  width: 30%;
+}
+#nb-isotype {
+  width: 60%;
+}
+#nb-logotype {
+  margin-left: 2%;
+  width: 75%;
+}
+
+
+/* Searchbar */
+#nb-searchbar {
+  margin: 0;
+  width: 40%;
+}
+
+.disabled {
+  pointer-events: none;
+}

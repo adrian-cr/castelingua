@@ -1,0 +1,26 @@
+#home-main {
+  align-content: center;
+  align-items: center;
+  background-image: url('../../../public/images/background.jpg');
+  background-position: center;
+  background-size: cover !important;
+  display: flex;
+  flex-wrap: wrap;
+  height: 90vh;
+  justify-content: center;
+  margin-top: 10vh;
+  padding: 0 !important;
+}
+#hm-wrapper {
+  border-radius: 30px;
+  display: flex;
+  background-color: #ffffffe0;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  padding: 5% 2%;
+  width: calc(50% + 200px);
+}
+#hm-logo {
+  margin-bottom: 5%;
+  width: calc(40% + 100px);
+}
