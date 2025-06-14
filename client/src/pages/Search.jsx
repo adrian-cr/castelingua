@@ -21,13 +21,13 @@ import Footer from "../components/Footer";
   const fetchWordData = async () => {
     try {
       const responseDLE = await fetch(
-        `${apiURL}dle/${encodeURIComponent(word)}`
+        `${apiURL}dle/${encodeURIComponent(word.toLowerCase())}`
       );
       const responseDPD = await fetch(
-        `${apiURL}dpd/${encodeURIComponent(word)}`
+        `${apiURL}dpd/${encodeURIComponent(word.toLowerCase())}`
       );
       const responseGTG = await fetch(
-        `${apiURL}gtg/${encodeURIComponent(word)}`
+        `${apiURL}gtg/${encodeURIComponent(word.toLowerCase())}`
       );
 
       if (resourcesAvailable([responseDLE, responseDPD, responseGTG])) {
@@ -72,7 +72,7 @@ import Footer from "../components/Footer";
       {
         !isObjEmpty(wordData)?
           <main className="search-main">
-            <h1 id="term">{word}</h1>
+            <h1 id="term">{word.toLowerCase()}</h1>
             {
             <Container id="resources">
               <ResourceTabs wordData={wordData}/>
