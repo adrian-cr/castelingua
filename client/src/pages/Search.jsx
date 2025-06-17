@@ -72,7 +72,7 @@ import Footer from "../components/Footer";
       {
         !isObjEmpty(wordData)?
           <main className="search-main">
-            <h1 id="term">{word.toLowerCase()}</h1>
+            <h1 id="title">{word.toLowerCase()}</h1>
             {
             <Container id="resources">
               <ResourceTabs wordData={wordData}/>

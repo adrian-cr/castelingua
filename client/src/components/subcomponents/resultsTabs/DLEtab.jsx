@@ -27,7 +27,7 @@ export default function TabBody({terms}) {
   let termNum = 1;
 
   return (
-    <>
+    <section className="dle-main">
       {
         terms && terms.map(term =>
           <>
@@ -35,10 +35,10 @@ export default function TabBody({terms}) {
             {term.etymology && <p className="etymology">{superindex(term.etymology)}</p>}
             <ol>
               {term.entries.map(entry =>
-                  <li>
-                    <abbr>{entry.POS && entry.POS}</abbr> {entry.startAbbrs && <abbr>{entry.startAbbrs.join(" ")}</abbr>} {entry.POS && superindex(entry.definition)} {entry.endAbbrs && <abbr>{entry.endAbbrs.join(" ")}</abbr>}<br></br>
-                    {entry.synonyms && <span><abbr>SIN.:</abbr> {entry.synonyms.map(e => <><Link className="link" to={`/búsqueda/${e}`}>{superindex(e)}</Link>{isLastArrEl(entry.synonyms, e)? "." : ", "}</>)}</span>}
-                  </li>
+                <li>
+                  <abbr>{entry.POS && entry.POS}</abbr> {entry.startAbbrs && <abbr>{entry.startAbbrs.join(" ")}</abbr>} {entry.POS && superindex(entry.definition)} {entry.endAbbrs && <abbr>{entry.endAbbrs.join(" ")}</abbr>}<br></br>
+                  {entry.synonyms && <span><abbr>SIN.:</abbr> {entry.synonyms.map(e => <><Link className="link" to={`/búsqueda/${e}`}>{superindex(e)}</Link>{isLastArrEl(entry.synonyms, e)? "." : ", "}</>)}</span>}
+                </li>
               )}
             </ol>
               {
@@ -73,10 +73,9 @@ export default function TabBody({terms}) {
                   </ul>
                 </>
               }
-
           </>
         )
       }
-    </>
+    </section>
   )
 }

@@ -20,3 +20,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media screen and (max-width: 600px) {
+  .footer-wrapper {
+    margin: 20px;
+  }
+  .footer-logo {
+    width: 150px;
+  }
+  .footer-copyright {
+    font-size: 14px;
+  }
+
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../../styles/components/subcomponents/searchbars/MainSearchbar.css";
 import TextField from "@mui/material/TextField";
-import { Container } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function SearchBar() {
@@ -18,6 +18,7 @@ export default function SearchBar() {
   }
 
   return (
+    <>
     <Container id="search-bar">
       <TextField
         id="search-field"
@@ -38,5 +39,7 @@ export default function SearchBar() {
         <img src="./images/search.svg"/>
       </Link>
     </Container>
+    <Link id="mobile-search-button" to={`/búsqueda/${query}`} className={query? "" : "disabled"} style={{display: "none"}}>Buscar</Link>
+    </>
   );
 }

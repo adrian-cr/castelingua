@@ -44,9 +44,9 @@ export default function Navbar() {
         textAlign:"center"
       }}
     >
-      <Container className="logo-container">
+      <Button className="logo-container" href="/">
         <img id="nb-isotype" src="../images/isotype_white_seethrough.png"/>
-      </Container>
+      </Button>
       <Divider/>
       <DrawerSearchBar></DrawerSearchBar>
       <List>

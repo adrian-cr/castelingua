@@ -3,7 +3,6 @@ import {Box, Tab, Tabs} from '@mui/material';
 import DLEtab from './subcomponents/resultsTabs/DLEtab';
 import DPDtab from "./subcomponents/resultsTabs/DPDtab";
 import GTGtab from "./subcomponents/resultsTabs/GTGtab";
-import { hasData } from '../modules/checkers';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -16,17 +15,9 @@ function CustomTabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      {value === index && <Box sx={{ pt: 3 }}>{children}</Box>}
     </div>
   );
-}
-
-
-function injectProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
 }
 
 export default function ResourceTabs({wordData}) {
